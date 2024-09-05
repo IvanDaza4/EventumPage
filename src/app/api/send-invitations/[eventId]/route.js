@@ -33,7 +33,7 @@ export async function POST(req, { params }) {
 
     // Enviar invitaciones a cada invitado
     for (const invitado of invitados) {
-      const confirmationLink = `${"AIzaSyCVK690IkYggdqmn8WxT7XFm68qovrIYpQ"}/confirm/${eventId}/${invitado.id}`;
+      const confirmationLink = `${process.env.NEXT_PUBLIC_BASE_URL}/confirm/${eventId}/${invitado.id}`;
       const nombreEvento = `${evento[0].nombreEvento}`;
       const fecha = `${evento[0].fecha}`;
       const ubicacion = `${evento[0].ubicacion}`;
