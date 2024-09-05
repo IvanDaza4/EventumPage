@@ -5,7 +5,7 @@ import AddExpenseForm from "@/components/gastos/AddExpenseForm";
 import ExpenseTable from "@/components/gastos/ExpenseTable";
 import { useEffect, useState } from "react";
 import { supabase } from "@/utils/supabase";
-import Popup from "@/components/Popup";
+import Popup from "@/components/PopUp";
 
 function ExpensesPage({ params }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
