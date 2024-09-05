@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 const menuItems = (eventId) =>
   [
     { path: "/", icon: "/hogar.png", text: "Dashboard" },
-    { path: "/eventos", icon: "/Calendario.png", text: "Eventos" },
+    { path: "/eventos", icon: "/calendario.png", text: "Eventos" },
     eventId && {
       path: `/eventos/${eventId}`,
       icon: "/archivo.png",
